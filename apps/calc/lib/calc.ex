@@ -1,5 +1,5 @@
 defmodule Calc do
   def sum(a, b) do
-    a + b
+    Decimal.add(Decimal.new(a), Decimal.new(b))
   end
 end
