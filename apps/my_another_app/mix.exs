@@ -36,6 +36,8 @@ defmodule MyAnotherApp.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [
+      {:my_app, in_umbrella: true},
+    ]
   end
 end
