@@ -1,0 +1,4 @@
+# AppTypes
+
+**TODO: Add description**
+
