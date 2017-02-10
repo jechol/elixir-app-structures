@@ -1,18 +1,12 @@
 defmodule Echo do
-  @moduledoc """
-  Documentation for Echo.
-  """
+  use GenServer
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Echo.hello
-      :world
-
-  """
-  def hello do
-    :world
+  def start_link() do
+    GenServer.start_link(__MODULE__, nil, name: :echo)
+  end
+  
+  def handle_cast(msg, state) do
+    IO.puts ":echo received #{msg}"
+    {:noreply, state}
   end
 end

@@ -1,18 +1,5 @@
 defmodule MyApp do
-  @moduledoc """
-  Documentation for MyApp.
-  """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> MyApp.hello
-      :world
-
-  """
-  def hello do
-    :world
+  def echo_sum_of(a, b) do
+    GenServer.cast(:echo, Calc.sum(a, b))
   end
 end

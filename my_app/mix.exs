@@ -28,6 +28,9 @@ defmodule MyApp.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [
+      {:calc, path: "../calc"},
+      {:echo, path: "../echo"},
+    ]
   end
 end
