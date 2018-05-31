@@ -33,7 +33,7 @@ iex> MyApp.echo_sum_of(10, 20)
 :echo received 30
 ```
 
-### 5. umbrell-with-dep-wrong-place
+### 5. umbrella-dep-in-wrong-place
 * `calc` uses `decimal`, but
 * `decimal` is added in `echo` by mistake.
 
